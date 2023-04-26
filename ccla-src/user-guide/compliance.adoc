@@ -1,7 +1,7 @@
 = Compliance =
 ifndef::imagesdir[:imagesdir: images/compliance]
 
-When managing infrastructures for production use cases, security and compliance are crucial factors to consider. The clusters need to be securely configured to minimize the attack surface. Additionally, every organization might have audit requirements for systems to be compliant with security standards.
+When managing infrastructures for production use cases, security and compliance are crucial factors to consider. The clusters need to be securely configured to minimize the attack surface. Additionally, each organization may have audit requirements for systems to be compliant with security standards.
 
 Cloudclapp enables you to stay compliant with more than 10 regulations such as HIPAA, CIS, PCI-DSS or ISO. Using our compliance module, you can identify any non-compliant resources in your environments.
 
@@ -12,8 +12,8 @@ _Note : Public providers lock access to manager nodes. The compliance process wi
 == Compliance for Environment
 
 As the reference for our compliance module, the Center for Internet Security or CIS is the entry point for our compliance scan (https://www.cisecurity.org/).
-We have reuse the concept of Implementation Groups (IG) to drive how deep an environement is affected by the compliance needs.
-We assume, depending on the type of your environement, the level of compliance, so the associated security rules are not same if you deploy a local sandbox, a pre-production or a production platform.
+We have reutilized the concept of Implementation Groups (IG) to drive how deep an environment is affected by the compliance needs.
+We assume the level of compliance, depending on your environment type, therefore, the associated security rules are not same if you deploy a local sandbox, a pre-production or a production platform.
 
 image:Compliance.png[width=900px]
 
@@ -23,7 +23,7 @@ Per environment, by clicking on the gear icon, it's possible to select between 4
 
 * *No data protection* : no compliance applied
 * *Basic* : controls for small, commercial off-the-shelf or home office software environments where sensitivity of the data is low. Minimal standard of information security
-* *Extended* : controls focused on helping security teams manage sensitive client
+* *Extended* : controls focused on helping security teams manage sensitive clients
 * *Expert* : controls that reduce the impact of zero-day attacks and targeted attacks from sophisticated adversaries.
 
 image:ComplianceEnvSettings.png[width=900px]
@@ -118,9 +118,9 @@ https://www.cisecurity.org/cybersecurity-tools/mapping-compliance
 
 === Dashboard
 
-From environment home page, a user can access compliance dashboard by clicking on *Compliance*
+From the environment home page, a user can access the compliance dashboard by clicking on *Compliance*
 
-Depending on standards selected in environment settings, each row represents percentage of completion of standards with 3 colors 
+Depending on the standards selected in environment settings, each row represents a percentage of completion of standards with 3 colors 
 
 * PASS / Green : indicates that the test was run successfully, and passed
 
@@ -132,9 +132,9 @@ image:ComplianceEnvDashboard.png[width=900px]
 
 === Remediation
 
-After running a compliance scan, for each standards, a JSON report is available in the dashboard. Click in the arrow to download it
+After running a compliance scan, for each standard, a JSON report is available in the dashboard. Click on the arrow to download it
 
-Inside, results are presentes by status : pass, fail and warning.
+Inside, results are presented by status : pass, fail and warning.
 
 The first number in the JSON represents the CIS reference
 
@@ -161,9 +161,9 @@ The first number in the JSON represents the CIS reference
     }
 ----
 
-_Note : In the previous exract, 2 tests in failure are *3.10* and *6.2* for *CIS* standard matching CEK-03,HRS-06,IAM-01 for *CSA* standard_
+_Note : In the previous extract, 2 tests in failure are *3.10* and *6.2* for *CIS* standard matching CEK-03,HRS-06,IAM-01 for *CSA* standard_
 
-Depending to the type of K8 cluster, a CIS benchmarks report can be downloaded to find details of test and remediation mechanism
+Depending on the type of K8 cluster, a CIS benchmarks report can be downloaded to find details of the test and remediation mechanism
 
 * EKS cluster : CIS_Amazon_Elastic_Kubernetes_Service_(EKS)_Benchmark_v1.2.0.pdf
 * AKS cluster : CIS_Azure_Kubernetes_Service_(AKS)_Benchmark_v1.2.0.pdf
@@ -176,7 +176,7 @@ image:ComplianceBenchmarkReport.png[width=900px]
 
 === Backend
 
-As many of automation task in Cloudclapp, compliance scan is implemented via a worklow
+Like many automation tasks in Cloudclapp, the compliance scan is implemented via a worklow
 This workflow is composed of 3 processes :
 
 * Launch scan
