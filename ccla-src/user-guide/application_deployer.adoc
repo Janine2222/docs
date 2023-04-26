@@ -1,14 +1,14 @@
 = Application Deployer =
 ifndef::imagesdir[:imagesdir: images/app_deployer]
-Cloudclapp offer large possibility of applications deployment : container based or VM based
+Cloudclapp offers a wide range of possibilities for application deployment : container based or VM based
 
-== Marketplaces ==
+== Marketplace ==
 
-Cloudclapp's marketplaces provide users to access large software applications and services that are built on, integrate with or complement the cloud provider's offerings.
+Cloudclapp's marketplace provides users with access to large software applications and services that are built on, integrated with, or compliment the cloud provider's offerings.
 
 === Public Docker Hub ===
 
-Docker Hub is the world’s largest repository of container images with an array of content sources including container community developers, open source projects and independent software vendors (ISV) building and distributing their code in containers
+Docker Hub is the world’s largest repository of container images with an array of content sources including container community developers, open source projects, and independent software vendors (ISV) building and distributing their code in containers
 
 image:PublicDockerHub.png[width=900px]
 
@@ -21,7 +21,7 @@ image:PrivateDockerHub.png[width=900px]
 === VM - AWS EC2 marketplace ===
 
 AWS Marketplace is a curated digital catalog that you can use to find, buy, deploy, and manage third-party software, data, and services that you need to build solutions and run your businesses.
-EC2 is the one dedicated for Virtual Machines
+EC2 is dedicated to Virtual Machines
 
 image:VMMarketPlace.png[width=900px]
 
